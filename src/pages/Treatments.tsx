@@ -5,7 +5,12 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Heart, Brain, Bone, Eye, Stethoscope, Activity, Clock, Users, Star, MapPin } from "lucide-react";
-import treatmentsGrid from "@/assets/treatments-grid.jpg";
+import treatmentCardiology from "@/assets/treatment-cardiology.jpg";
+import treatmentNeurology from "@/assets/treatment-neurology.jpg";
+import treatmentOrthopedics from "@/assets/treatment-orthopedics.jpg";
+import treatmentOphthalmology from "@/assets/treatment-ophthalmology.jpg";
+import treatmentGastroenterology from "@/assets/treatment-gastroenterology.jpg";
+import treatmentFertility from "@/assets/treatment-fertility.jpg";
 
 const Treatments = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -18,7 +23,7 @@ const Treatments = () => {
       name: "Cardiac Bypass Surgery",
       category: "cardiology",
       icon: Heart,
-      image: treatmentsGrid,
+      image: treatmentCardiology,
       description: "Advanced heart surgery to improve blood flow when coronary arteries are blocked.",
       duration: "4-6 hours",
       recovery: "2-3 weeks",
@@ -38,7 +43,7 @@ const Treatments = () => {
       name: "Brain Tumor Surgery",
       category: "neurology",
       icon: Brain,
-      image: treatmentsGrid,
+      image: treatmentNeurology,
       description: "Precise neurosurgical procedures to remove brain tumors with minimal invasive techniques.",
       duration: "6-8 hours",
       recovery: "3-4 weeks",
@@ -58,7 +63,7 @@ const Treatments = () => {
       name: "Hip Replacement",
       category: "orthopedics",
       icon: Bone,
-      image: treatmentsGrid,
+      image: treatmentOrthopedics,
       description: "Total hip replacement surgery using latest prosthetic technology for improved mobility.",
       duration: "2-3 hours",
       recovery: "6-8 weeks",
@@ -78,7 +83,7 @@ const Treatments = () => {
       name: "LASIK Eye Surgery",
       category: "ophthalmology",
       icon: Eye,
-      image: treatmentsGrid,
+      image: treatmentOphthalmology,
       description: "Laser vision correction surgery to reduce dependency on glasses and contact lenses.",
       duration: "30 minutes",
       recovery: "1-2 weeks",
@@ -98,7 +103,7 @@ const Treatments = () => {
       name: "Liver Transplant",
       category: "gastroenterology",
       icon: Activity,
-      image: treatmentsGrid,
+      image: treatmentGastroenterology,
       description: "Life-saving liver transplantation with excellent success rates and post-operative care.",
       duration: "8-12 hours",
       recovery: "3-6 months",
@@ -118,7 +123,7 @@ const Treatments = () => {
       name: "IVF Treatment",
       category: "fertility",
       icon: Heart,
-      image: treatmentsGrid,
+      image: treatmentFertility,
       description: "Advanced fertility treatments with high success rates using latest reproductive technology.",
       duration: "2-6 weeks",
       recovery: "2 weeks",
